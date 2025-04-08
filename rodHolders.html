@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hobie Rod Holders - Cypress Kayak Accessories</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <div class="navbar-container">
+    <nav class="navbar">
+      <div class="logo">
+        <a href="index.html">
+          <img src="assets/cypress_logo_1_transparent.png" alt="Cypress Kayak Accessories Logo" class="logo-img">
+        </a>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Product Details Section -->
+  <section id="product-detail">
+    <div class="container">
+      <div class="product-images">
+        <img src="product1.jpg" alt="Hobie Rod Holders" class="main-image">
+        <div class="image-thumbnails">
+          <img src="product1.jpg" alt="Product Thumbnail 1">
+          <img src="product1-side.jpg" alt="Product Thumbnail 2">
+          <img src="product1-back.jpg" alt="Product Thumbnail 3">
+        </div>
+      </div>
+
+      <div class="product-info">
+        <h2>Hobie Rod Holders</h2>
+        <p class="price">$119.99</p>
+        <p class="product-description">
+          These durable rod holders not only attach seamlessly with Hobie Outback Kayaks, but also add peace of mind with integrated rod leashes
+        </p>
+
+        <!-- Features List -->
+        <ul class="product-features">
+          <li>Improved waterproof seal</li>
+          <li>Easy installation</li>
+          <li>Perfect fit for Hobie kayaks</li>
+          <li>Made from high-quality, durable materials</li>
+        </ul>
+
+        <!-- PayPal Button -->
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+          <input type="hidden" name="cmd" value="_xclick">
+          <input type="hidden" name="business" value="your-paypal-email@example.com">
+          <input type="hidden" name="item_name" value="Snap Seal Hatch 8 Upgrade Kit">
+          <input type="hidden" name="amount" value="79.99">
+          <input type="hidden" name="currency_code" value="USD">
+          <input type="submit" value="Buy Now" class="btn-buy-now">
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="assets/cypress_logo_1_transparent.png" alt="Cypress Kayak Accessories Logo">
+      </div>
+  
+      <div class="footer-info">
+        <p>© 2025 Cypress Kayak Accessories</p>
+        <p>
+          <a href="mailto:info@cypresskayakaccessories.com">info@cypresskayakaccessories.com</a>
+        </p>
+        <p>
+          <a href="tel:+17869708686">(786) 970-8686</a>
+        </p>
+        </p>
+      </div>
+    </div>
+  </footer>
+  <script>
+    const hamburger = document.getElementById('hamburger')
+    const navLinks = document.getElementById('nav-links')
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active')
+      hamburger.classList.toggle('active'); // Toggle the "active" class on hamburger to show X
+    })
+  </script>
+</body>
+</html>
+
+<style>
+  /* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+nav {
+  background-color: white;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+  margin: 0 15px;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Product Detail Section */
+#product-detail {
+  padding: 50px 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+}
+
+.container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.product-images {
+  flex: 1;
+  padding-right: 30px;
+}
+
+.main-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.image-thumbnails {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.image-thumbnails img {
+  width: 80px;
+  height: 80px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.image-thumbnails img:hover {
+  transform: scale(1.1);
+}
+
+.product-info {
+  flex: 1.5;
+}
+
+.product-info h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.price {
+  font-size: 1.5rem;
+  color: #00aaff;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.product-description {
+  font-size: 1.1rem;
+  color: #d8d3d3;
+  margin-bottom: 20px;
+}
+
+.product-features {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.product-features li {
+  font-size: 1rem;
+  color: #d8d3d3;
+  margin-bottom: 8px;
+}
+
+.btn-buy-now {
+  background-color: #00aaff;
+  color: white;
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-buy-now:hover {
+  background-color: #0077cc;
+}
+
+.navbar-container {
+  width: 100%;
+  background-color: white;
+  color: black;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Space between logo and menu */
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo-img {
+  height: 6rem; /* Adjust size of the logo */
+  width: auto;
+}
+
+.nav-links {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-left: 20px; /* Space between each menu item */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #008ecc; /* Lighter hover color */
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  width: 30px;
+  height: 25px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hamburger .bar {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  transition: all 0.3s ease;
+}
+
+/* "X" Shape when the menu is open */
+.hamburger.active .bar:nth-child(1) {
+  transform: rotate(45deg);
+  position: absolute;
+  top: 1.5rem;
+  width: 2rem;
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 1.5rem;
+  width: 2rem;
+}
+
+.hamburger.active {
+  position: relative
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+    width: 100%;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex; /* Show hamburger icon */
+    background-color: white;
+    align-self: center;
+  }
+
+  .hamburger.active {
+    align-self: self-start;
+    height: 45px;
+  }
+
+  .logo-img {
+    height: 3rem; /* Adjust logo size for smaller screens */
+  }
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-images {
+    padding-right: 0;
+  }
+
+  .image-thumbnails img {
+    width: 60px;
+    height: 60px;
+  }
+}
+footer {
+  background: white;
+  color: #ffffff;
+  padding: 1rem;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  min-height: 100px;
+  height: fit-content;
+}
+
+.footer-logo {
+  order: 1;
+}
+
+.footer-logo img {
+  height: 6rem;
+}
+
+.footer-info {
+  flex: 1 1;
+  order: 2;
+}
+
+.footer-info p {
+  margin: 0.5rem 0;
+  color: black;
+}
+
+.footer-info a {
+  color: #00aaff;
+  text-decoration: none;
+}
+
+.footer-info a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+  }
+  .footer-logo {
+    order: 2;
+  }
+  .footer-info {
+    order: 1;
+  }
+}
+</style>
